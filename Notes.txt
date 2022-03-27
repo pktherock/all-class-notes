@@ -725,3 +725,11 @@ switch (b) {
  * Git download link
     https://git-scm.com/
 
+# All commands related to git.
+
+1. git status 
+2. git init
+3. git add .    || git add fileName || git add fileName1 fileName2
+4. git commit -m "important message related to you commit"
+5. git remote add origin [your repository link]
+6. git push origin master
