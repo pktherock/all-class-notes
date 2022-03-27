@@ -1,0 +1,727 @@
+Install vscode 
+    --> https://code.visualstudio.com/
+
+# Install Brave Browser to see add free video on any website
+    --> https://try.bravesoftware.com/dgf367/
+
+Install Extensions:-
+    # Auto close tag 
+    # Auto Rename tag 
+    # Live server  
+    # Bracket pair colorizer 2 
+    # code runner 
+    # code spell checker  
+    # color highlight 
+    # Eslint 
+    # Material Icon Theme
+    # prettier 
+    # vscode icons
+
+
+
+# What is Html css and javascript?
+    --> https://www.youtube.com/watch?v=6mbwJ2xhgzM
+        start from 3:00 minute
+
+html --> fileName.html
+css --> fileName.css
+js --> fileName.js
+
+* fileName can any name
+
+# For creating boilerplate of html --> ! 
+                                        --> enter
+
+# Comment in html
+    <!-- Comment -->
+
+# shortcut to comment any line and uncomment same line
+    ctrl + /
+
+# Heading tag in html
+    <!-- h1 - h6 -->
+    <h1>Purnea college of engineering!</h1>
+    <h2>Purnea college of engineering!</h2>
+    <h3>Purnea college of engineering!</h3>
+    <h4>Purnea college of engineering!</h4>
+    <h5>Purnea college of engineering!</h5>
+    <h6>Purnea college of engineering!</h6>
+
+
+
+* To comment or uncomment any line in any programming language --> ctrl + /
+
+# To print anything in console we have to write 
+    console.log(anything);
+
+# How to make variable in javascript?
+
+
+    4 way :
+
+        1. a = 10;
+        2. let  a = 10;
+        3. const  a = 10;
+        4. var a = 10;
+
+
+        // 1. a = 10;
+
+        purnea = 10;
+
+        console.log(purnea);
+        console.log('Purnea college of engineering!');
+
+
+        //2  let
+
+        let a = 10;
+
+        let b = 'purnea college of engineering';
+
+        console.log(a);
+
+        console.log(b);
+
+
+        // 3 const
+
+        const a = 10;
+
+        console.log(a);
+
+
+        // 4. var
+
+        var a = 10;
+
+        console.log(a);
+
+
+
+Q What is difference between let const and var?
+
+    * let -->
+            1. Re assign possible
+            2. Re deceleration Not possible
+            3. we can assign undefined
+
+            Eg: 
+                let a = 20;
+
+                console.log(a);
+
+                a = 'purnea'; // reassign possible
+
+                console.log(a);
+
+                let a = 100; // Re deceleration Not possible
+
+                console.log(a);
+
+    * const -->
+            1. Re assign not possible
+            2. Re deceleration also not possible
+            3. we cannot assign undefined
+
+
+            const x = 100;
+
+            console.log(x);
+
+            x = 'college'; // Re assign not possible
+
+            console.log(x);
+
+            const x = 2000; // Re deceleration not possible
+            console.log(x);
+    
+    * var --> 
+            1.Re assign possible
+            2.Re deceleration also possible
+            3. we can assign undefined.
+
+            var b = 50;
+
+            console.log(b);
+
+            b = 20000; // Re assign possible
+
+            console.log(b);
+
+            var b = 'Engineering'; // Re deceleration also possible
+
+            console.log(b);
+
+
+    * new difference between let const and var --> 3
+
+        let a = 10;
+
+        a = 20; // true
+
+        // let a = 30; // fase
+
+        let b; // true
+
+
+        const c = 10;
+
+        // c = 30; //false
+
+        // const c = 40; //false
+
+        // const d;   // false
+
+        var x = 100;
+
+        x = 300; // true
+
+        var x = 'pce'; // true
+
+        var y; // true
+
+
+
+
+
+
+########## Assignment ##########
+Q. Rules of Naming of variable?
+
+    * The general rules for constructing names for variables (unique identifiers) are:
+
+    * Names can contain letters, digits, underscores, and dollar signs.
+
+    * Names must begin with a letter
+
+    * Names can also begin with $ and _ (but we will not use it in this tutorial)
+
+    * Names are case sensitive (y and Y are different variables)
+
+    * Reserved words (like JavaScript keywords) cannot be used as names
+
+
+
+# Data Types in javascript
+
+ # primitive data type
+
+    1. Number * 
+    2. String *
+    3. Boolean *
+    4. undefined  *
+    5. Null   *
+    6. Bigint
+    7. Symbol
+ *.                      * NaN --> not a data type
+
+
+
+
+
+    // Number
+    let i = 10;
+
+    //********** typeof
+
+    // console.log(typeof i); //number
+
+    // string
+    i = 'Pce';
+
+    // console.log(typeof i);
+    // console.log(i);
+
+    // boolean --> true or false
+
+    // i = true;
+    i = false;
+
+    // console.log(typeof i);
+
+    // undefined
+
+    // let a = undefined;  // don't assign undefined to any variable it is not best practice.
+    let a;
+
+    // console.log(typeof a);
+
+    // NaN --> not a number --> assignment
+
+    // null
+
+    let r = null; 
+
+    // console.log(typeof r); // object
+
+    // Bigint
+
+    let big = BigInt;
+
+    console.log(typeof big); // function
+
+ # Non-primitive data type 
+    1. Array
+    2. object
+    3. function 
+
+    let arr = [10, 20];
+
+    console.log(typeof arr); // object
+
+    let obj = {
+    name: 'purnea',
+    };
+
+    console.log(typeof obj); // object
+
+    let check = function () {};
+
+    console.log(typeof check); // function
+
+
+Q.why javascript is called as weakly or loosely typed programming language?
+
+     javascript is a weakly or loosely programming language , it means when we store data, we do not need to specify data type, js analyses own its own based on data.
+     Eg:
+        let a = 100;
+
+        console.log(typeof a);
+
+        a = 'college';
+
+        console.log(typeof a);
+
+        a = true;
+        console.log(typeof a);
+
+        a = undefined;
+
+        console.log(typeof a);
+
+        a = null;
+
+        console.log(typeof a);
+
+
+
+# Operators in javascript --> (any programming language)
+
+
+    1. Arithmetic Operators -->
+        + (Addition)
+        - (subtraction)
+        * (multiplication)
+        / (division)
+        % (Modules)
+        -- (decrement)
+        ++ (increment)   a++ --> a+1
+
+BUG: Post increment or pre increment --> 100% // fixed
+    // preincrement and post increment
+
+    // let doremon = 1000;
+
+    // let ballu = ++doremon; // first increment then assingn to ballu --> 1001
+    // console.log('😍', ballu, doremon); // 1000,1001
+
+    // let sujuka = doremon++; // first assign then increment
+
+    // console.log('🍭', sujuka, doremon); // 1001, 1002
+
+    // predecrement and post decrement
+
+    let doremon = 1000;
+
+    let ballu = --doremon; // first decrement then assingn to ballu --> 1001
+    console.log('😍', ballu, doremon); // 999, 999
+
+    let sujuka = doremon--; // first assign then deccrement
+
+    console.log('🍭', sujuka, doremon); // 999, 998
+
+
+    // +
+    // console.log(10 + 15); // 25
+
+    let a = 300;
+    let b = 400;
+
+    let sum = a + b;
+    // console.log(sum);
+    // console.log(a + b); // 700
+
+    //  -
+
+    // console.log(10 - 5); // 5
+
+    let c = 30;
+    let d = 40;
+
+    let sub = c - d;
+    // console.log(sub); // -10
+    // console.log(c - d); // -10
+
+    //  *
+
+    // console.log(20 * 6); // 120
+
+    let e = 300;
+    let f = 400;
+    let multi = e * f;
+    // console.log(multi); // 12000
+    // console.log(e * f); // 12000
+
+    // ctrl+/ --> to comment
+
+    //  /
+
+    // console.log(20 / 3); // 6.666
+
+    let g = 30;
+    let h = 3;
+
+    let div = g / h;
+
+    // console.log(div); // 10
+
+    // console.log(g / h);
+
+    // % --> reminder
+
+    // console.log(10 % 2); // 0
+
+    let i = 100;
+    let j = 35;
+    let remin = i % j;
+    // console.log(remin); // 30
+    // console.log(i % j); // 30
+
+    // ++ --> increment
+
+    let k = 20;
+
+    k = k + 1; // <--> k++
+
+    k++; // post increment --> k+1
+
+    // console.log(k); // 22
+
+    // -- --> decrement
+
+    let l = 30;
+
+    console.log(l); // 30
+
+    l--;
+
+    l = l - 1; // <--> l--
+
+    console.log(l);
+
+
+    2. comparison Operators: --> true / false
+
+        == (equal to) --> * does't check type
+        === (equal to and equal type)
+        != (not equal) --> * does't check type
+        !== (not equal to and same type)
+        > (grater than)
+        >= (greater than or equal to)
+        < (less than)
+        <= (less than or equal to)
+
+
+        // == (equal to) --> *
+
+        // let a = 10;
+        // let b = '10';
+
+        // // console.log(typeof a);
+        // // console.log(typeof b);
+
+        // // console.log(a === b);
+
+        // let name1 = 'Rahul';
+        // let name2 = 'Sachin';
+
+        // console.log(name1 === name2); // false
+
+        // let name3 = true;
+        // let name4 = false;
+
+        // console.log(name3 === name4); // false
+
+        // !==
+
+        let name1 = 'Rahul';
+        let name2 = 'Sachin';
+
+        console.log(name1 !== name2); // true
+
+        let name3 = true;
+        let name4 = false;
+
+        console.log(name3 !== name4); // true
+        // > (grater than)
+
+        let a = 50;
+
+        let b = 40;
+
+        // console.log(a > b); //  true
+
+        // >= (greater than or equal to)
+        let c = 40;
+        let d = 30;
+
+        // console.log(c >= d); // true
+
+        // < (less than)
+
+        let e = 40;
+        let f = 50;
+
+        // console.log(e < f); //true
+        // <= (less than or equal to)
+
+        let g = 10;
+
+        let h = 60;
+
+        console.log(g <= h); // true
+
+    3. Logical Operators --> true or false
+        * Logical AND --> &&
+        * Logical OR --> ||
+        * Logical NOT --> !
+
+        // * Logical AND:
+        // true && false --> false
+        // false && true --> false
+        // false && false --> false
+        // true && true --> true
+
+        // let a = 100;
+
+        // let b = a > 100 && 100;
+
+        // console.log(b);
+
+        // * Logical OR:
+        //  true || false --> true
+        // false || true --> true
+        // false || false --> false
+        // true || true --> true
+        // let a = 100;
+
+        // let b = a <= 0 || 100;
+
+        // console.log('🌹', b);
+
+        // * Logical NOT:
+
+        let a = 100;
+
+        let b = !(a >= 100) || 100;
+
+        // console.log('🌹', b);
+
+    4. Ternary Operators / Conditional operator
+        // Ternary Operators
+
+
+        // condition ? ifTrue : ifFalse
+
+        let ternary = 300;
+
+        ternary > 200
+        ? console.log('Welcome to ternary world')
+        : console.log('oYee your condition is wrong😂');
+    
+    5. String Operators: --> string concatenation
+
+        // let str = 'purnea college';
+
+        // let str1 = 'of engineering!!';
+
+        // let num = 100;
+
+        // // let addNumInString = num + str1;
+        // // console.log(addNumInString);
+
+        // let ourCollegeName = str + ' ' + str1 + ' ' + num;
+
+        // console.log(ourCollegeName);
+
+        // let groupName = 'Help  "purnea" Desk ECE';
+
+        // console.log(groupName);
+
+        ## string Interpolation or String literals
+        // or Template Literals --> we use back tick --> `` --> esc button ke just niche
+
+        let str = 'purnea college';
+
+        let str1 = 'of engineering!!';
+
+        let num = 100;
+
+        let addNumInString = `${num}                ${str}`;
+        console.log(addNumInString);
+
+        let ourCollegeName = `${str} ${str1} is most colorful college`;
+
+        console.log(ourCollegeName);
+
+        let groupName = 'Help  "purnea" Desk ECE';
+
+        console.log(groupName);
+
+        let restaurant = `In front of our engineering 
+                                    college one restaurant
+                                            is there which name is zaika`;
+
+        console.log(restaurant);
+
+
+    6. type Operators
+        # typeof
+
+        // # typeOf
+
+        let num = 100000;
+        let str = 'samsung';
+        let bool = true;
+        let und = undefined;
+        let nu = null;
+
+        console.log(typeof num);
+        console.log(typeof str);
+        console.log(typeof bool);
+        console.log(typeof und);
+        console.log(typeof nu);
+
+        const arr = [];
+
+        const obj = {};
+
+        const func = function () {};
+
+        console.log(typeof arr);
+        console.log(typeof obj);
+        console.log(typeof func);
+
+        let a = 110;
+
+        if (typeof a === 'number' && a > 100) {
+        console.log('YOu are right');
+        } else {
+        console.log('you are wrong');
+        }
+
+
+
+
+# // Conditional statement  
+    * if
+    * if else if
+    * if else if else
+    * Nested if else
+# SYNTAX
+
+if (condition) {
+  // statements
+}
+
+
+// let a = 100;
+
+// console.log(a > 10);
+
+// if (a < 10) {
+//   console.log('True');
+//   console.log('I am inside if statement');
+// } else if (a < 70) {
+//   console.log('You are in else if statement');
+// } else if (a > 90) {
+//   console.log('YOu are inside 2nd else if statement');
+// } else {
+//   console.log('Your condition is wrong');
+// }
+
+let a = 100;
+if (a > 100) {
+  console.log(a++);
+} else {
+  console.log(a);
+  console.log(a--);
+  console.log(a);
+}
+
+if (a >= 200 || a <= 200) {
+  console.log('You answer will correct');
+} else {
+  console.log('you answer is wrong');
+}
+
+
+
+if (a < 10){
+    if(a > 30){
+        console.log("tttttttttttttttttttt");
+    }else{
+        console.log("ppppppppppppppppppp");
+    }
+}else{
+    if (a < 90){
+        console.log("Iiiiiiiiii");
+    }else{
+        console.log("eeeeeeeeeeeeeee");
+    }
+}
+
+
+# switch case without break keyword
+
+// syntax
+// switch(key){
+//     case 1:
+//         statements;
+//     case 2:
+//         statements;
+//     case 3:
+//         statements;
+//     case 4:
+//         statements;
+//     default:
+//         statements;
+// }
+
+
+
+# switch case with break keyword
+let b = 100;
+
+switch (b) {
+  case 10:
+    console.log('10');
+    break;
+  case 100:
+    console.log('90000000000000000000');
+  case 18:
+    console.log('18');
+    break;
+  case 100:
+    console.log('100');
+    break;
+  default:
+    console.log('I am default');
+}
+
+
+# How to use Git And GitHub
+ * Git download link
+    https://git-scm.com/
+
