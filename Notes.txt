@@ -334,7 +334,7 @@ BUG: Post increment or pre increment --> 100% // fixed
 
     let doremon = 1000;
 
-    let ballu = --doremon; // first decrement then assingn to ballu --> 1001
+    let ballu = --doremon; // first decrement then assign to ballu --> 1001
     console.log('😍', ballu, doremon); // 999, 999
 
     let sujuka = doremon--; // first assign then deccrement
@@ -721,6 +721,14 @@ switch (b) {
 }
 
 
+let hel = 1000;
+console.log(typeof hel);
+
+let convertHelToString = hel.toString();
+
+console.log(typeof convertHelToString);
+
+
 # How to use Git And GitHub
  * Git download link
     https://git-scm.com/
@@ -733,3 +741,273 @@ switch (b) {
 4. git commit -m "important message related to you commit"
 5. git remote add origin [your repository link]
 6. git push origin master
+
+
+
+# Loops in JavaScript
+
+1. while loop
+// syntax
+
+// while (condition) {
+//     // statements
+// }
+
+while (10 > 5) {
+  console.log('True');
+  break;
+}
+
+let a = 10;
+
+while (a) {
+  console.log(a);
+  break;
+}
+
+while (a > 9) {
+  console.log('True');
+  break;
+}
+
+
+Q. what is difference between do while and while loop?
+
+2. do while loop
+// syntax
+
+// do {
+//     // statements
+// } while (condition);
+
+let a = 10;
+
+do {
+  console.log('Tumlog jldi join kiya kro!!');
+  console.log(a > 20);
+} while (a > 20);
+
+do {
+  console.log('Make sure to use break keyword otherwise browser will crash');
+  break;
+} while (a);
+
+do {
+  console.log('Condition is false then also loop is running once');
+} while (20 > 30);
+
+3. for loop
+// syntax
+
+// for(initialization; condition; increment or decrement){
+//     // statements
+// }
+
+// i = i+1 <--> i++
+
+for (let i = 1; i < 5; i = i + 1) {
+  console.log('class ka time 10:15AM');
+}
+
+for (let i = 5; i > 1; i--) {
+  console.log('class ka time 10:15AM');
+}
+
+// Q. what is the output of this program?
+let x = 17;
+let y = 1;
+
+if (!!x && y) {
+  console.log(x);
+} else {
+  console.log(y);
+}
+
+// Q. what is the output of this program?
+
+let a = 3;
+let b = 2;
+
+a = (a == b) == 0;
+
+console.log(a, b);
+
+
+## link of question
+https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_operators2
+
+
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log('i = ', i);
+// }
+
+// const collegeName = 'Purnea College Of Engineering, Purnea';
+
+// .length --> string property
+
+// index --> starts from 0
+
+// console.log(collegeName.length);
+
+// let count = 0;
+
+// for (let i = 0; i < collegeName.length; i++) {
+//   count++;
+//   console.log(collegeName[i]);
+// }
+
+
+// Q Write a javascript program to check how many vowels are there in string?
+
+// const collegeName = 'Purnea College Of Engineering, Purnea';
+
+// let vowel = ['A', 'E', 'I', 'O', 'U'];
+
+// let vowelCount = 0;
+
+// for (let i = 0; i < collegeName.length; i++) {
+//   for (let j = 0; j < vowel.length; j++) {
+//     if (collegeName[i].toLowerCase() === vowel[j].toLowerCase()) {
+//       vowelCount++;
+//     }
+//   }
+// }
+
+// console.log(vowelCount);
+
+
+
+let arr = [1, 2, 3, 4, 5];
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+// *** for of loop
+
+for (let a of arr) {
+  console.log(a);
+}
+
+let str = 'purnea';
+
+for (let s of str) {
+  console.log(s);
+}
+
+// let arr = [1, 4, 6, 78, 898];
+
+// console.log(arr[4]);
+
+// *** for in loop
+
+// key and value pairs
+
+// Object literal
+const obj = {
+  name: 'purnea',
+  address: 'Ramnagar',
+  branch: 'ECE',
+  floor: '2nd',
+  isOpen: false,
+  noOfBranch: 5,
+};
+
+console.log(obj['isOpen']);
+console.log(obj.isOpen);
+
+for (let o in obj) {
+  console.log(o, obj[o]);
+}
+
+// H.W --> Iterate any object using normal for loop
+
+// H.W --> Iterate any object using normal for loop
+
+const obj = {
+  name: 'purnea',
+  address: 'Ramnagar',
+  branch: 'ECE',
+  floor: '2nd',
+  isOpen: false,
+  noOfBranch: 5,
+};
+
+// for in loop to iterate object
+// console.log(obj.name);
+// console.log(obj['name']);
+
+for (let purnea in obj) {
+  //   console.log(obj[purnea]);
+}
+
+// for loop to iterate object
+
+// console.log(Object.keys(obj));
+// console.log(Object.values(obj));
+
+for (let i = 0; i < Object.keys(obj).length; i++) {
+  //   console.log(Object.keys(obj)[i], Object.values(obj)[i]);
+  console.log(`${Object.keys(obj)[i]}: ${Object.values(obj)[i]}`);
+}
+
+for (let i = 1; i <= 10; i++) {
+  //   console.log(i);
+}
+
+
+## String important inbuilt method.
+let str = 'purnea College OF engineering!!.';
+
+// length --> property
+
+// console.log(str.length);
+
+// toUppercase() --> method
+
+// console.log(str.toUpperCase());
+
+// toLowercase()
+// console.log(str.toLowerCase());
+
+// trim()
+
+// console.log(str);
+// console.log(str.trim());
+
+// trimStart()
+
+// console.log(str.trimStart());
+
+// trimEnd()
+
+// console.log(str.trimEnd());
+
+// repeat()
+let str1 = '2k20 & 2k21';
+// console.log(str1.repeat(2));
+
+// startsWith() --> true or false
+
+// console.log(str.startsWith('P'));
+// console.log(str.startsWith('Q'));
+
+// endsWith()
+
+// console.log(str.endsWith('Engineering!!.'));
+// console.log(str.endsWith('Q'));
+
+// charAt()
+
+// console.log(str.charAt(0));
+
+// indexOf() --> if character matches then it will return index of that char otherwise it will return -1.
+
+console.log(str.indexOf('E'));
+
+// includes
+
+let str = 'purnea';
+
+console.log(str.includes('p'));
